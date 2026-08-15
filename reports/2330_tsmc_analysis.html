@@ -104,13 +104,13 @@ footer{text-align:center;font-size:12px;color:var(--text-dim);padding:26px 10px 
   <div class="tag">TW STOCK · INITIAL ANALYSIS</div>
   <h1>2330 台積電</h1>
   <div class="sub">台股個股初步分析｜現金流優先、基本面在後</div>
-  <div class="sub">報告版本 v1.0（第 1 步完成）　生成時間：2026-08-15</div>
+  <div class="sub">報告版本 v1.1（第 1–2 步完成）　生成時間：2026-08-15</div>
   <img class="badge" src="https://visitor-badge.laobi.icu/badge?page_id=mjib007.stock-analysis.2330" alt="Visitors">
 </header>
 
 <nav class="stepnav" id="stepnav">
   <span class="pad active" data-target="step1">1 · 現金流六大規則</span>
-  <span class="pad locked" data-target="step2">2 · 基本資訊</span>
+  <span class="pad" data-target="step2">2 · 基本資訊</span>
   <span class="pad locked" data-target="step3">3 · 法說會</span>
   <span class="pad locked" data-target="step4">4 · 營收趨勢</span>
   <span class="pad locked" data-target="step5">5 · 前瞻本益比</span>
@@ -629,14 +629,230 @@ footer{text-align:center;font-size:12px;color:var(--text-dim);padding:26px 10px 
   </div>
 </section>
 
-<section id="step2"><div class="pend">【第 2 步／共 6 步：基本資訊查詢】尚未執行</div></section>
+<section id="step2">
+  <h2>基本資訊查詢</h2>
+  <div class="steptag">【第 2 步／共 6 步】現金流關卡通過後，才開始看股價、EPS、營收與法說會</div>
+
+  <div class="key">
+    <b>結論先講：近四季 EPS 86.27 元、本益比 27.76 倍，而 2026 年 7 月營收年增 44.7%、前 7 月年增 37.0%，
+    獲利與營收都還在加速。</b><br>
+    這一步查到最值得講的一件事，是<b>三個網站的本益比從 27.41 到 32.20 倍都有</b>——差異不是誰算錯，
+    而是<b>「近四季」的定義不同</b>：Goodinfo 的 32.2 倍還沒把 2026Q2（EPS 27.25 元）納進去。
+    這種差異若不查清楚就引用，估值判斷會整個歪掉。
+  </div>
+
+  <h3>股價快照</h3>
+  <div class="wide">
+  <table>
+    <tbody>
+      <tr><td class="yr">收盤價</td><td><b>2,395 元</b>（<span class="negv">−40 元 / −1.64%</span>）</td>
+          <td class="yr">開 / 高 / 低</td><td>2,435 / 2,440 / 2,395</td></tr>
+      <tr><td class="yr">成交量</td><td>18,885 張（成交金額 456.50 億元）</td>
+          <td class="yr">市值</td><td>約 62.1 兆元</td></tr>
+      <tr><td class="yr">52 週最高</td><td>2,535 元</td>
+          <td class="yr">52 週最低</td><td>1,135 元<sup>†</sup></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="tnote">⚠️ <b>這是 2026/08/14 14:30 的收盤快照，不是即時報價</b>（今天 8/15 為週六，無交易）。正式下單請以你的看盤軟體／券商 App 為準。<br>
+    <sup>†</sup><b>52 週最低有兩個版本</b>：鉅亨網個股頁顯示 <b>1,135 元</b>，另一批搜尋結果摘要顯示 <b>1,065 元</b>。
+    兩者我無法在同一頁面同時驗證，<b>並陳而不擅自挑一個</b>；不影響本步驟任何結論，若你要用來算回檔幅度，建議自行以券商 App 覆核。</p>
+
+  <h3>估值指標：三個來源的本益比差異拆解</h3>
+  <div class="wide">
+  <table>
+    <thead><tr><th>來源</th><th>本益比</th><th>採用的「近四季」區間</th><th>判定</th></tr></thead>
+    <tbody>
+<tr><td class='yr'>Yahoo 股市</td><td>27.76 倍</td><td>2025Q3–2026Q2（EPS 86.27）</td>
+    <td><span class='mk ok'>✓ 最新</span></td></tr>
+<tr><td class='yr'>鉅亨網</td><td>27.41 倍</td><td>同上（微幅差異來自股數/取整）</td>
+    <td><span class='mk ok'>✓</span></td></tr>
+<tr><td class='yr'>Goodinfo（使用者截圖）</td><td>32.20 倍</td><td>2025Q2–2026Q1（EPS 74.38）</td>
+    <td><span class='mk warn'>△ 尚未納入 26Q2</span></td></tr>
+</tbody>
+  </table>
+  </div>
+  <p class="tnote"><b>驗證過程</b>：2,395 ÷ 86.27 = <b>27.76 倍</b>，與 Yahoo 顯示值完全吻合；
+    2,395 ÷ 74.38 = <b>32.20 倍</b>，與 Goodinfo 顯示值完全吻合。
+    74.38 元正好是財報狗標示的「2026Q1 的近四季 EPS」——<b>證實 Goodinfo 的本益比尚未更新至 2026Q2</b>。
+    要判斷「現在貴不貴」，應採用含 2026Q2 的 <b>27.76 倍</b>。</p>
+
+  <div class="wide">
+  <table>
+    <thead><tr><th>指標</th><th>數值</th><th>說明</th></tr></thead>
+    <tbody>
+      <tr><td class="yr">本益比（近四季）</td><td><b>27.76 倍</b></td>
+          <td>Yahoo 頁面同時顯示「同業平均 46.91 倍」</td></tr>
+      <tr><td class="yr">每股淨值</td><td>約 249.7 元<sup>*</sup></td>
+          <td>2026Q2 股東權益 6.47 兆 ÷ 259.3 億股，<b>推算數字</b></td></tr>
+      <tr><td class="yr">股價淨值比</td><td>約 <b>9.6 倍</b><sup>*</sup></td>
+          <td>2,395 ÷ 249.7，<b>推算數字</b>；Goodinfo 截圖顯示 10.54（用 26Q1 淨值）</td></tr>
+      <tr><td class="yr">現金殖利率（已除息 4 季）</td><td><b>0.92%</b></td>
+          <td>近 12 個月已除息 5+5+6+6＝22 元 ÷ 2,395，與鉅亨網顯示值一致</td></tr>
+      <tr><td class="yr">現金殖利率（已宣告 4 季）</td><td><b>1.09%</b></td>
+          <td>含尚未除息的 26Q1、26Q2 各 7 元，合計 26 元 ÷ 2,395，<b>推算數字</b></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="tnote"><sup>*</sup>鉅亨網個股頁顯示「本淨比 17.95」，與 Goodinfo 的 10.54 及我自行反推的 9.6 倍<b>差距過大</b>，
+    研判該欄位有誤或口徑不同，<b>本報告不採用</b>。股利政策為<b>按季配發</b>，
+    金額逐季墊高：24Q3/24Q4 各 4.5 元 → 25Q1/25Q2 各 5 元 → 25Q3/25Q4 各 6 元 → 26Q1/26Q2 各 <b>7 元</b>。</p>
+
+  <h3>EPS：歷年與最近六季</h3>
+  <div class="wide" style="display:flex;gap:18px;flex-wrap:wrap;">
+    <div style="flex:1;min-width:270px;">
+      <table>
+        <thead><tr><th>年度</th><th>EPS（元）</th><th>年增率</th></tr></thead>
+        <tbody><tr><td class='yr'>2020</td><td>19.97</td><td>—</td></tr>
+<tr><td class='yr'>2021</td><td>23.01</td><td><span class="posv">+15.2</span>%</td></tr>
+<tr><td class='yr'>2022</td><td>39.20</td><td><span class="posv">+70.4</span>%</td></tr>
+<tr><td class='yr'>2023</td><td>32.34</td><td><span class="negv">-17.5</span>%</td></tr>
+<tr><td class='yr'>2024</td><td>45.25</td><td><span class="posv">+39.9</span>%</td></tr>
+<tr><td class='yr'>2025</td><td>66.25</td><td><span class="posv">+46.4</span>%</td></tr></tbody>
+      </table>
+    </div>
+    <div style="flex:1;min-width:270px;">
+      <table>
+        <thead><tr><th>季度</th><th>EPS（元）</th><th>來源</th></tr></thead>
+        <tbody><tr><td class='yr'>2025 Q1</td><td>13.94</td><td><span class='fn'>淨利推算</span></td></tr>
+<tr><td class='yr'>2025 Q2</td><td>15.33</td><td><span class='fn'>淨利推算</span></td></tr>
+<tr><td class='yr'>2025 Q3</td><td>17.44</td><td><span class='fn'>淨利推算</span></td></tr>
+<tr><td class='yr'>2025 Q4</td><td>19.50</td><td><span class='mk ok'>官方公布</span></td></tr>
+<tr><td class='yr'>2026 Q1</td><td>22.08</td><td><span class='mk ok'>官方公布</span></td></tr>
+<tr><td class='yr'>2026 Q2</td><td>27.25</td><td><span class='mk ok'>官方公布</span></td></tr></tbody>
+      </table>
+    </div>
+  </div>
+  <p class="tnote"><b>近四季 EPS（2025Q3–2026Q2）＝ 17.44 + 19.50 + 22.08 + 27.25 ＝ 86.27 元</b>。
+    2026 上半年已賺 49.33 元，是 2025 全年 66.25 元的 74%。
+    標示「淨利推算」的季度，是用該季稅後淨利 ÷ 259.3 億股計算；標示「官方公布」者出自法說會報導。
+    兩種方法互相驗證：2025 全年四季推算加總 66.15 元 vs 官方公布 66.25 元，差異僅 0.15%（來自流通股數取整）。</p>
+
+  <div class="key">
+    <b>股本變動確認：台積電近年沒有股票分割、減資或現金增資，各期 EPS 可直接比較。</b><br>
+    依據有二：①使用者提供的 Goodinfo 截圖中，<b>2014–2025 年「平均股本」全都落在 2,589～2,594 億元</b>，十二年幾乎沒動；
+    ②第 1 步拆解的融資活動細項顯示，<b>2021–2025 年現金增資皆為 0</b>。
+    這一步在別的股票常常出包（拿分割前的舊 EPS 當比較基期，會算出完全相反的成長率），這裡確認過沒有這個問題。
+  </div>
+
+  <h3>近 12 個月月營收</h3>
+  <div class="wide">
+  <table>
+    <thead><tr><th>年月</th><th>營收（億元）</th><th>月增率</th><th>年增率</th></tr></thead>
+    <tbody><tr><td class='yr'>2025/08</td><td>3,358</td><td><span class="posv">+3.9</span>%</td><td><span class="posv">+33.8</span>%</td></tr>
+<tr><td class='yr'>2025/09</td><td>3,310</td><td><span class="negv">-1.4</span>%</td><td><span class="posv">+31.4</span>%</td></tr>
+<tr><td class='yr'>2025/10</td><td>3,675</td><td><span class="posv">+11.0</span>%</td><td><span class="posv">+16.9</span>%</td></tr>
+<tr><td class='yr'>2025/11</td><td>3,436</td><td><span class="negv">-6.5</span>%</td><td><span class="posv">+24.5</span>%</td></tr>
+<tr><td class='yr'>2025/12</td><td>3,350</td><td><span class="negv">-2.5</span>%</td><td><span class="posv">+20.4</span>%</td></tr>
+<tr><td class='yr'>2026/01</td><td>4,013</td><td><span class="posv">+19.8</span>%</td><td><span class="posv">+36.8</span>%</td></tr>
+<tr><td class='yr'>2026/02</td><td>3,177</td><td><span class="negv">-20.8</span>%</td><td><span class="posv">+22.2</span>%</td></tr>
+<tr><td class='yr'>2026/03</td><td>4,152</td><td><span class="posv">+30.7</span>%</td><td><span class="posv">+45.2</span>%</td></tr>
+<tr><td class='yr'>2026/04</td><td>4,107</td><td><span class="negv">-1.1</span>%</td><td><span class="posv">+17.5</span>%</td></tr>
+<tr><td class='yr'>2026/05</td><td>4,170</td><td><span class="posv">+1.5</span>%</td><td><span class="posv">+30.1</span>%</td></tr>
+<tr><td class='yr'>2026/06</td><td>4,427</td><td><span class="posv">+6.2</span>%</td><td><span class="posv">+67.9</span>%</td></tr>
+<tr><td class='yr'>2026/07</td><td>4,676</td><td><span class="posv">+5.6</span>%</td><td><span class="posv">+44.7</span>%</td></tr></tbody>
+  </table>
+  </div>
+  <p class="tnote"><b>2026 年 7 月營收 4,675.81 億元，月增 5.62%、年增 44.69%，連 3 個月創歷史新高</b>；
+    2026 年 1–7 月累計 2 兆 8,720.64 億元，年增 37.0%。
+    <b>近 12 個月年增率沒有任何一個月為負</b>，最低是 2025/10 的 +16.94%、最高是 2026/06 的 +67.87%。
+    2 月的 −20.83% 月減是工作天數造成的季節性現象，不是需求轉弱（該月年增率仍有 +22.17%）。
+    詳細趨勢圖留到<b>第 4 步</b>再畫。</p>
+  <p class="tnote"><b>交叉驗證</b>：上表 2026/01–03 加總 1.13 兆、04–06 加總 1.27 兆，
+    與法說會公布的 26Q1、26Q2 單季合併營收完全吻合；1–7 月加總 2 兆 8,720.64 億，
+    與經濟日報／時報資訊的報導數字也完全吻合。</p>
+
+  <h3>法人說明會</h3>
+  <div class="wide">
+  <table>
+    <thead><tr><th>日期</th><th>形式／地點</th><th>簡報連結</th></tr></thead>
+    <tbody>
+      <tr><td class="yr"><b>2026/07/16</b>（最新）</td><td>台北文華東方酒店 B2 文華廳</td>
+        <td><a href="https://mopsov.twse.com.tw/nas/STR/233020260716M001.pdf" target="_blank">MOPS 簡報 PDF</a> ／
+            <a href="https://investor.tsmc.com/chinese/quarterly-results/2026/q2" target="_blank">官網 26Q2</a></td></tr>
+      <tr><td class="yr">2026/04/16</td><td>線上法說會</td>
+        <td><a href="https://mopsov.twse.com.tw/nas/STR/233020260416M001.pdf" target="_blank">MOPS 簡報 PDF</a> ／
+            <a href="https://investor.tsmc.com/chinese/quarterly-results/2026/q1" target="_blank">官網 26Q1</a></td></tr>
+      <tr><td class="yr">2026/01/15</td><td>台北文華東方酒店 B2 文華廳</td>
+        <td><a href="https://mopsov.twse.com.tw/nas/STR/233020260115M001.pdf" target="_blank">MOPS 簡報 PDF</a> ／
+            <a href="https://investor.tsmc.com/chinese/quarterly-results/2025/q4" target="_blank">官網 25Q4</a></td></tr>
+      <tr><td class="yr">2025/10/16</td><td>線上法說會</td>
+        <td><a href="https://mopsov.twse.com.tw/nas/STR/233020251016M001.pdf" target="_blank">MOPS 簡報 PDF</a></td></tr>
+      <tr><td class="yr">2025/07/17</td><td>台北文華東方酒店 B2 文華廳</td>
+        <td><a href="https://mopsov.twse.com.tw/nas/STR/233020250721M001.pdf" target="_blank">MOPS 簡報 PDF</a></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="tnote">⚠️ <b>誠實說明：上述 MOPS 簡報 PDF 我讀不到</b>（該網域設有 robots.txt 限制，自動擷取會被擋下）。
+    連結是附給你自己點開看的，<b>不是「我已分析過該 PDF」</b>。
+    下方 26Q2 法說會重點，來自財經媒體的法說會整理報導，不是我讀原始簡報得來的。</p>
+
+  <div class="key warn">
+    <b>2026Q2 法說會（7/16）媒體整理的重點</b>
+    <ul style="margin:8px 0 0;">
+      <li>26Q2 <b>EPS 27.25 元、毛利率 67.7%</b>，營收 1.27 兆元、年增 36%，均創歷史新高</li>
+      <li><b>2026 年資本支出從 520–560 億美元上修到 600–640 億美元</b>——與第 1 步觀察到的「2025 年投資額創高 11,444 億」是同一條擴產曲線的延續</li>
+      <li>26Q3 財測：營收 <b>446–458 億美元</b>、毛利率 65–67%；毛利率回落是因 2 奈米量產初期會稀釋 3～4 個百分點</li>
+      <li>宣布在美國<b>追加千億美元投資</b></li>
+    </ul>
+  </div>
+
+  <h3>籌碼面（短線情緒輔助參考，與現金流／基本面訊號分開看）</h3>
+  <div class="wide">
+  <table>
+    <thead><tr><th>日期</th><th>融資餘額（張）</th><th>融資增減</th><th>融券餘額（張）</th><th>券資比</th></tr></thead>
+    <tbody>
+      <tr><td class="yr">2026/08/14</td><td>28,060</td><td><span class="posv">+97.0</span></td><td>36</td><td>0.13%</td></tr>
+      <tr><td class="yr">2026/08/13</td><td>27,963</td><td><span class="negv">-641.0</span></td><td>38</td><td>0.14%</td></tr>
+      <tr><td class="yr">2026/08/12</td><td>28,604</td><td><span class="negv">-466.0</span></td><td>39</td><td>0.14%</td></tr>
+      <tr><td class="yr">2026/08/11</td><td>29,070</td><td><span class="negv">-718.0</span></td><td>30</td><td>0.10%</td></tr>
+      <tr><td class="yr">2026/08/10</td><td>29,788</td><td><span class="posv">+131.0</span></td><td>32</td><td>0.11%</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="tnote">融資餘額五個交易日從 29,788 張降到 28,060 張（−5.8%），<b>散戶槓桿在減少而非加碼</b>；
+    融券餘額僅 36 張、券資比 0.13%，空方部位幾乎不存在。
+    <b>當沖比率我沒有查到可靠來源</b>（Yahoo 該欄位不提供、Goodinfo 依流程不自行擷取），
+    這一項<b>從缺</b>，不用推測值充數。籌碼面只反映短線情緒，與前面的現金流結論互相獨立。</p>
+
+  <div class="snap">
+    <b>資料來源</b>（查詢時間：2026-08-15）<br>
+    ① 收盤價 2,395 元、漲跌 −40 元／−1.64%、開高低、成交量 18,885 張、市值 62.1 兆、本益比 27.76 倍、
+    「同業平均 46.91 倍」：<a href="https://tw.stock.yahoo.com/quote/2330.TW" target="_blank">Yahoo 股市 2330 個股頁</a>（頁面標示最後更新 2026/08/14 14:30）。<br>
+    ② 本益比 27.41 倍、殖利率 0.92%、52 週最高 2,535／最低 1,135：<a href="https://www.cnyes.com/twstock/2330" target="_blank">鉅亨網 2330 總覽</a>。
+    另一批搜尋結果摘要顯示 52 週最低為 1,065 元，來源未能定位到單一頁面，故並陳。<br>
+    ③ 本益比 32.2 倍、PBR 10.54、平均股本 2,589–2,594 億（2014–2025）：<b>使用者提供的 Goodinfo 截圖</b>（日期 08/14）。<br>
+    ④ 季度現金股利與除息／發放日：<a href="https://tw.stock.yahoo.com/quote/2330.TW/dividend" target="_blank">Yahoo 股市 2330 股利政策</a>。<br>
+    ⑤ 2025 全年 EPS 66.25 元、營收 3 兆 8,090.5 億、年增 31.6%；2025Q4 EPS 19.5 元、毛利率 62.3%：
+    <a href="https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%A9%8D%E9%9B%BB2025%E5%B9%B4%E7%8D%B2%E5%88%A91-71%E5%85%86%E5%85%83%E5%89%B5%E6%96%B0%E9%AB%98-%E6%AF%8F%E8%82%A1%E7%B4%94%E7%9B%8A66-25%E5%85%83-060145747.html" target="_blank">Yahoo 新聞</a>、
+    <a href="https://www.ctee.com.tw/news/20260115701075-430501" target="_blank">工商時報 2026/01/15</a>。<br>
+    ⑥ 2026Q1 EPS 22.08 元、營收 1.13 兆、毛利率 66.2%：<a href="https://www.ctee.com.tw/news/20260416701075-430501" target="_blank">工商時報 2026/04/16</a>、
+    <a href="https://money.udn.com/money/story/5607/9445671" target="_blank">經濟日報</a>。<br>
+    ⑦ 2026Q2 EPS 27.25 元、毛利率 67.7%、營收 1.27 兆、資本支出上修至 600–640 億美元、26Q3 財測 446–458 億美元、美國追加千億美元投資：
+    <a href="https://www.sinotrade.com.tw/richclub/hotstock/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%B3%95%E8%AA%AA-%E7%AC%AC%E4%BA%8C%E5%AD%A3EPS%E5%89%B5%E6%AD%B7%E5%8F%B2%E6%96%B0%E9%AB%98%E9%81%9427-25%E5%85%83-%E6%AF%9B%E5%88%A9%E7%8E%8767-7--%E7%AC%AC%E4%B8%89%E5%AD%A3%E6%8C%87%E5%BC%95%E5%86%8D%E5%89%B5%E6%96%B0%E9%AB%98-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-6a588173546795e51e5f5b07" target="_blank">豐雲學堂法說會整理</a>、
+    <a href="https://money.udn.com/money/story/5612/9631663" target="_blank">經濟日報</a>、
+    <a href="https://news.cnyes.com/news/id/6537162" target="_blank">鉅亨網</a>。<br>
+    ⑧ 近 12 個月月營收：<a href="https://tw.stock.yahoo.com/quote/2330.TW/revenue" target="_blank">Yahoo 股市 2330 營收</a>；
+    7 月營收 4,675.81 億、月增 5.6%、年增 44.69%、前 7 月累計 2 兆 8,720.64 億／年增 37.0%：
+    <a href="https://money.udn.com/money/story/5710/9681873" target="_blank">經濟日報</a>、
+    <a href="https://www.chinatimes.com/realtimenews/20260810002373-260410" target="_blank">時報資訊</a>、
+    <a href="https://news.cnyes.com/news/id/6568349" target="_blank">鉅亨網營收速報</a>。<br>
+    ⑨ 法說會場次、日期、地點與簡報連結：<a href="https://poorstock.com/earningcall/2330" target="_blank">散戶鬥嘴鼓（整理自公開資訊觀測站）</a>；
+    官網投資人關係：<a href="https://investor.tsmc.com/chinese/quarterly-results/2026/q2" target="_blank">台積電 IR 26Q2</a>。<br>
+    ⑩ 融資融券餘額與券資比：<a href="https://tw.stock.yahoo.com/quote/2330.TW/margin" target="_blank">Yahoo 股市 2330 資券變化</a>（2026/08/10–08/14）。<br>
+    ⑪ 近四季 EPS 74.38 元（用於解釋 Goodinfo 本益比口徑）：<a href="https://statementdog.com/analysis/2330/eps" target="_blank">財報狗 2330 EPS</a>。<br>
+    <br>
+    <b>推算數字標示</b>：每股淨值 249.7 元、股價淨值比 9.6 倍、已宣告殖利率 1.09%、2020–2024 年度 EPS、
+    2025Q1–Q3 季度 EPS，皆為<b>由公開數字計算而得，非直接查得的公告值</b>，計算方式已於各處註明。
+  </div>
+</section>
 <section id="step3"><div class="pend">【第 3 步／共 6 步：法說會資料深入討論】尚未執行</div></section>
 <section id="step4"><div class="pend">【第 4 步／共 6 步：營收趨勢視覺化】尚未執行</div></section>
 <section id="step5"><div class="pend">【第 5 步／共 6 步：前瞻本益比／EPS 預估】尚未執行</div></section>
 <section id="step6"><div class="pend">【第 6 步／共 6 步：投資決策推理】僅在使用者主動詢問時執行</div></section>
 
 <footer>
-  2330 台積電｜台股個股初步分析　報告版本 v1.0　生成時間 2026-08-15<br>
+  2330 台積電｜台股個股初步分析　報告版本 v1.1　生成時間 2026-08-15<br>
   本報告為分析方法論的個人研究紀錄，<b>不是投資建議</b>。所有數字請以公司official財報與公開資訊觀測站為準。
 </footer>
 
