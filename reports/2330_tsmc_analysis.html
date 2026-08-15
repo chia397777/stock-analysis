@@ -104,7 +104,7 @@ footer{text-align:center;font-size:12px;color:var(--text-dim);padding:26px 10px 
   <div class="tag">TW STOCK · INITIAL ANALYSIS</div>
   <h1>2330 台積電</h1>
   <div class="sub">台股個股初步分析｜現金流優先、基本面在後</div>
-  <div class="sub">報告版本 v1.2（第 1–3 步完成）　生成時間：2026-08-15</div>
+  <div class="sub">報告版本 v1.3（第 1–4 步完成）　生成時間：2026-08-15</div>
   <img class="badge" src="https://visitor-badge.laobi.icu/badge?page_id=mjib007.stock-analysis.2330" alt="Visitors">
 </header>
 
@@ -112,7 +112,7 @@ footer{text-align:center;font-size:12px;color:var(--text-dim);padding:26px 10px 
   <span class="pad active" data-target="step1">1 · 現金流六大規則</span>
   <span class="pad" data-target="step2">2 · 基本資訊</span>
   <span class="pad" data-target="step3">3 · 法說會</span>
-  <span class="pad locked" data-target="step4">4 · 營收趨勢</span>
+  <span class="pad" data-target="step4">4 · 營收趨勢</span>
   <span class="pad locked" data-target="step5">5 · 前瞻本益比</span>
   <span class="pad locked" data-target="step6">6 · 投資決策</span>
 </nav>
@@ -1032,12 +1032,191 @@ footer{text-align:center;font-size:12px;color:var(--text-dim);padding:26px 10px 
     26Q2 期末現金 31,343 億 ＋ 短期投資 3,838 億 ＝ 35,181 億元一致。兩項獨立來源互相吻合。
   </div>
 </section>
-<section id="step4"><div class="pend">【第 4 步／共 6 步：營收趨勢視覺化】尚未執行</div></section>
+<section id="step4">
+  <h2>營收趨勢視覺化</h2>
+  <div class="steptag">【第 4 步／共 6 步】近 12 個月月營收與年增率</div>
+
+  <div class="key">
+    <b>結論先講：月營收連 3 個月創高，但這條曲線裡有一個容易被誤讀的地方。</b><br>
+    2026/06 的年增率 <b>+67.87%</b> 是近 12 個月最高，看起來像突然爆發——
+    但拆開來看，<b>那是基期太低造成的</b>：2025/06 營收僅約 2,637 億元，比同年 4 月的 3,496 億、5 月的 3,205 億都低一截。
+    真正該看的是絕對金額的階梯：<b>月營收從 2025 年下半的 3,300–3,600 億區間，
+    整層墊高到 2026 年的 4,100–4,700 億</b>，而且沒有回頭。
+  </div>
+
+  <h3>近 12 個月月營收</h3>
+  <div class="capt">單位：億元。米色＝期間高峰（2026/07），粉色＝期間谷底（2026/02）。含零軸與刻度線。</div>
+  <svg viewBox="0 0 880 380" xmlns="http://www.w3.org/2000/svg" class="chart" role="img" aria-label="近12個月月營收">
+<line x1="78" y1="334.0" x2="858" y2="334.0" stroke="var(--text-dim)" stroke-width="1.4"  />
+<text x="69" y="338.0" text-anchor="end" class="axlab">0</text>
+<line x1="78" y1="274.0" x2="858" y2="274.0" stroke="var(--line)" stroke-width="1" stroke-dasharray="3 4" />
+<text x="69" y="278.0" text-anchor="end" class="axlab">1,000</text>
+<line x1="78" y1="214.0" x2="858" y2="214.0" stroke="var(--line)" stroke-width="1" stroke-dasharray="3 4" />
+<text x="69" y="218.0" text-anchor="end" class="axlab">2,000</text>
+<line x1="78" y1="154.0" x2="858" y2="154.0" stroke="var(--line)" stroke-width="1" stroke-dasharray="3 4" />
+<text x="69" y="158.0" text-anchor="end" class="axlab">3,000</text>
+<line x1="78" y1="94.0" x2="858" y2="94.0" stroke="var(--line)" stroke-width="1" stroke-dasharray="3 4" />
+<text x="69" y="98.0" text-anchor="end" class="axlab">4,000</text>
+<line x1="78" y1="34.0" x2="858" y2="34.0" stroke="var(--line)" stroke-width="1" stroke-dasharray="3 4" />
+<text x="69" y="38.0" text-anchor="end" class="axlab">5,000</text>
+<rect x="90.3" y="132.5" width="40.3" height="201.5" rx="2" fill="var(--accent)" />
+<text x="110.5" y="125.5" text-anchor="middle" class="vlab">3,358</text>
+<text x="110.5" y="354.0" text-anchor="middle" class="xlab">25/08</text>
+<rect x="155.3" y="135.4" width="40.3" height="198.6" rx="2" fill="var(--accent)" />
+<text x="175.5" y="128.4" text-anchor="middle" class="vlab">3,310</text>
+<text x="175.5" y="354.0" text-anchor="middle" class="xlab">25/09</text>
+<rect x="220.3" y="113.5" width="40.3" height="220.5" rx="2" fill="var(--accent)" />
+<text x="240.5" y="106.5" text-anchor="middle" class="vlab">3,675</text>
+<text x="240.5" y="354.0" text-anchor="middle" class="xlab">25/10</text>
+<rect x="285.4" y="127.8" width="40.3" height="206.2" rx="2" fill="var(--accent)" />
+<text x="305.5" y="120.8" text-anchor="middle" class="vlab">3,436</text>
+<text x="305.5" y="354.0" text-anchor="middle" class="xlab">25/11</text>
+<rect x="350.4" y="133.0" width="40.3" height="201.0" rx="2" fill="var(--accent)" />
+<text x="370.5" y="126.0" text-anchor="middle" class="vlab">3,350</text>
+<text x="370.5" y="354.0" text-anchor="middle" class="xlab">25/12</text>
+<rect x="415.4" y="93.2" width="40.3" height="240.8" rx="2" fill="var(--accent)" />
+<text x="435.5" y="86.2" text-anchor="middle" class="vlab">4,013</text>
+<text x="435.5" y="354.0" text-anchor="middle" class="xlab">26/01</text>
+<rect x="480.4" y="143.4" width="40.3" height="190.6" rx="2" fill="var(--c-trough)" />
+<text x="500.5" y="136.4" text-anchor="middle" class="vlab">3,177</text>
+<text x="500.5" y="354.0" text-anchor="middle" class="xlab">26/02</text>
+<rect x="545.4" y="84.9" width="40.3" height="249.1" rx="2" fill="var(--accent)" />
+<text x="565.5" y="77.9" text-anchor="middle" class="vlab">4,152</text>
+<text x="565.5" y="354.0" text-anchor="middle" class="xlab">26/03</text>
+<rect x="610.4" y="87.6" width="40.3" height="246.4" rx="2" fill="var(--accent)" />
+<text x="630.5" y="80.6" text-anchor="middle" class="vlab">4,107</text>
+<text x="630.5" y="354.0" text-anchor="middle" class="xlab">26/04</text>
+<rect x="675.4" y="83.8" width="40.3" height="250.2" rx="2" fill="var(--accent)" />
+<text x="695.5" y="76.8" text-anchor="middle" class="vlab">4,170</text>
+<text x="695.5" y="354.0" text-anchor="middle" class="xlab">26/05</text>
+<rect x="740.4" y="68.4" width="40.3" height="265.6" rx="2" fill="var(--accent)" />
+<text x="760.5" y="61.4" text-anchor="middle" class="vlab">4,427</text>
+<text x="760.5" y="354.0" text-anchor="middle" class="xlab">26/06</text>
+<rect x="805.4" y="53.5" width="40.3" height="280.5" rx="2" fill="var(--c-peak)" />
+<text x="825.5" y="46.5" text-anchor="middle" class="vlab">4,676</text>
+<text x="825.5" y="354.0" text-anchor="middle" class="xlab">26/07</text>
+</svg>
+  <p class="tnote"><b>2026/07 營收 4,675.81 億元，月增 5.62%、年增 44.69%，連 3 個月改寫歷史新高。</b>
+    2026 年 1–7 月累計 2 兆 8,720.64 億元，年增 37.0%。
+    圖上的谷底 2026/02（3,176.57 億）是<b>工作天數造成的季節性</b>（2 月僅 28 天，1 月 31 天），
+    <b>不是需求轉弱</b>——該月年增率仍有 +22.17%，且緊接著 3 月就用 +30.70% 的月增率補回來。</p>
+
+  <h3>近 12 個月營收年增率</h3>
+  <div class="capt">單位：%。米色＝最高（2026/06 +67.87%），粉色＝最低（2025/10 +16.94%）。圖上標籤四捨五入至整數，精確值見下方文字與第 2 步表格。</div>
+  <svg viewBox="0 0 880 330" xmlns="http://www.w3.org/2000/svg" class="chart" role="img" aria-label="近12個月營收年增率">
+<line x1="78" y1="284.0" x2="858" y2="284.0" stroke="var(--text-dim)" stroke-width="1.4"  />
+<text x="69" y="288.0" text-anchor="end" class="axlab">0</text>
+<line x1="78" y1="221.5" x2="858" y2="221.5" stroke="var(--line)" stroke-width="1" stroke-dasharray="3 4" />
+<text x="69" y="225.5" text-anchor="end" class="axlab">20</text>
+<line x1="78" y1="159.0" x2="858" y2="159.0" stroke="var(--line)" stroke-width="1" stroke-dasharray="3 4" />
+<text x="69" y="163.0" text-anchor="end" class="axlab">40</text>
+<line x1="78" y1="96.5" x2="858" y2="96.5" stroke="var(--line)" stroke-width="1" stroke-dasharray="3 4" />
+<text x="69" y="100.5" text-anchor="end" class="axlab">60</text>
+<line x1="78" y1="34.0" x2="858" y2="34.0" stroke="var(--line)" stroke-width="1" stroke-dasharray="3 4" />
+<text x="69" y="38.0" text-anchor="end" class="axlab">80</text>
+<rect x="90.3" y="178.2" width="40.3" height="105.8" rx="2" fill="var(--accent)" />
+<text x="110.5" y="171.2" text-anchor="middle" class="vlab">34%</text>
+<text x="110.5" y="304.0" text-anchor="middle" class="xlab">25/08</text>
+<rect x="155.3" y="185.8" width="40.3" height="98.2" rx="2" fill="var(--accent)" />
+<text x="175.5" y="178.8" text-anchor="middle" class="vlab">31%</text>
+<text x="175.5" y="304.0" text-anchor="middle" class="xlab">25/09</text>
+<rect x="220.3" y="231.1" width="40.3" height="52.9" rx="2" fill="var(--c-trough)" />
+<text x="240.5" y="224.1" text-anchor="middle" class="vlab">17%</text>
+<text x="240.5" y="304.0" text-anchor="middle" class="xlab">25/10</text>
+<rect x="285.4" y="207.5" width="40.3" height="76.5" rx="2" fill="var(--accent)" />
+<text x="305.5" y="200.5" text-anchor="middle" class="vlab">24%</text>
+<text x="305.5" y="304.0" text-anchor="middle" class="xlab">25/11</text>
+<rect x="350.4" y="220.2" width="40.3" height="63.8" rx="2" fill="var(--accent)" />
+<text x="370.5" y="213.2" text-anchor="middle" class="vlab">20%</text>
+<text x="370.5" y="304.0" text-anchor="middle" class="xlab">25/12</text>
+<rect x="415.4" y="169.0" width="40.3" height="115.0" rx="2" fill="var(--accent)" />
+<text x="435.5" y="162.0" text-anchor="middle" class="vlab">37%</text>
+<text x="435.5" y="304.0" text-anchor="middle" class="xlab">26/01</text>
+<rect x="480.4" y="214.7" width="40.3" height="69.3" rx="2" fill="var(--accent)" />
+<text x="500.5" y="207.7" text-anchor="middle" class="vlab">22%</text>
+<text x="500.5" y="304.0" text-anchor="middle" class="xlab">26/02</text>
+<rect x="545.4" y="142.8" width="40.3" height="141.2" rx="2" fill="var(--accent)" />
+<text x="565.5" y="135.8" text-anchor="middle" class="vlab">45%</text>
+<text x="565.5" y="304.0" text-anchor="middle" class="xlab">26/03</text>
+<rect x="610.4" y="229.3" width="40.3" height="54.7" rx="2" fill="var(--accent)" />
+<text x="630.5" y="222.3" text-anchor="middle" class="vlab">18%</text>
+<text x="630.5" y="304.0" text-anchor="middle" class="xlab">26/04</text>
+<rect x="675.4" y="190.0" width="40.3" height="94.0" rx="2" fill="var(--accent)" />
+<text x="695.5" y="183.0" text-anchor="middle" class="vlab">30%</text>
+<text x="695.5" y="304.0" text-anchor="middle" class="xlab">26/05</text>
+<rect x="740.4" y="71.9" width="40.3" height="212.1" rx="2" fill="var(--c-peak)" />
+<text x="760.5" y="64.9" text-anchor="middle" class="vlab">68%</text>
+<text x="760.5" y="304.0" text-anchor="middle" class="xlab">26/06</text>
+<rect x="805.4" y="144.3" width="40.3" height="139.7" rx="2" fill="var(--accent)" />
+<text x="825.5" y="137.3" text-anchor="middle" class="vlab">45%</text>
+<text x="825.5" y="304.0" text-anchor="middle" class="xlab">26/07</text>
+</svg>
+  <p class="tnote"><b>近 12 個月年增率沒有任何一個月為負</b>，最低 +16.94%、最高 +67.87%，
+    中位數落在 +30% 上下。若把 12 個月切成前後兩半：
+    <b>2025/08–2026/01 平均年增約 +27.3%，2026/02–2026/07 平均年增約 +37.9%</b>——
+    <b>成長不只是持續，而且在加速</b>，這與第 3 步法說會把全年美元營收展望從「超過 30%」二度上修到
+    「略高於 40%」是同一件事的兩種呈現。</p>
+  <p class="tnote">⚠️ <b>年增率這張圖要小心看</b>：它同時受「當期表現」與「去年同期基期」影響。
+    2026/06 的 +67.87% 有很大一部分來自低基期，2026/04 的 +17.50% 則是因為 2025/04 基期偏高（約 3,496 億）。
+    <b>單看年增率的高低起伏會誤判動能</b>，要搭配上一張絕對金額圖一起讀。</p>
+
+  <h3>季營收：階梯式墊高</h3>
+  <div class="wide">
+  <table>
+    <thead><tr><th>季度</th><th>營收（億元）</th><th>季增率</th><th>年增率</th><th>資料性質</th></tr></thead>
+    <tbody><tr class='qrow'><td class='yr'>2025 Q1</td><td>約 8,395</td><td>—</td><td>—</td><td><span class='fn'>推算</span></td></tr>
+<tr class='qrow'><td class='yr'>2025 Q2</td><td>約 9,341</td><td><span class="posv">+11.3</span>%</td><td>—</td><td><span class='fn'>推算</span></td></tr>
+<tr class='qrow'><td class='yr'>2025 Q3</td><td>約 9,894</td><td><span class="posv">+5.9</span>%</td><td>—</td><td><span class='fn'>推算</span></td></tr>
+<tr><td class='yr'>2025 Q4</td><td>10,461</td><td><span class="posv">+5.7</span>%</td><td><span class="posv">+20.5</span>%</td><td><span class='fn'>月營收加總</span></td></tr>
+<tr><td class='yr'>2026 Q1</td><td>11,341</td><td><span class="posv">+8.4</span>%</td><td><span class="posv">+35.1</span>%</td><td><span class='fn'>官方</span></td></tr>
+<tr><td class='yr'>2026 Q2</td><td>12,704</td><td><span class="posv">+12.0</span>%</td><td><span class="posv">+36.0</span>%</td><td><span class='fn'>官方</span></td></tr></tbody>
+  </table>
+  </div>
+  <p class="tnote"><b>連續 5 季季增為正</b>，且季增幅度由 +5.7% 一路擴大到 +12.0%。
+    26Q3 財測為 <b>446–458 億美元</b>（官方，中位數 452 億、季增約 12%），
+    以法說會的匯率假設 32 元換算約為 <b>1.43–1.47 兆元</b>（<b>推算數字</b>，實際會隨匯率波動）。
+    灰底列的 2025Q1–Q3 為<b>推算數字</b>，推法有二、互相驗證：
+    ①用 2026 各季官方年增率回推（26Q1 +35.1%、26Q2 +36.0%）；
+    ②用 2025 全年官方營收 38,090.5 億扣除已知的 25Q4（10,461 億）與前兩季推算值。
+    兩法算出的 2025Q3 分別為 9,899 億與 9,894 億，差異 0.05%。</p>
+
+  <div class="key warn">
+    <b>把三張圖串起來看的一件事</b><br>
+    第 1 步的規則一顯示營業現金流（A）從 2020 年起換檔加速；第 3 步顯示 HPC 占比從 60% 跳到 66%；
+    這一步的月營收圖則顯示<b>絕對金額整層墊高的時點落在 2026 年初</b>。
+    三個獨立資料源指向同一件事：<b>這一輪成長的驅動力是 AI／HPC，且目前仍在爬升段，尚未看到轉折</b>。
+    <span class="negv">要留意的是</span>：營收年增 +37%～+44% 的同時，第 3 步也看到存貨天數升到 87 天、
+    應收天數升到 29 天。<b>成長與備貨是同步發生的</b>，若營收增速回落而天數不降，就是第一個要警戒的組合。
+  </div>
+
+  <div class="snap">
+    <b>資料來源</b>（查詢時間：2026-08-15）<br>
+    ① 近 12 個月月營收、月增率、年增率原始數據：
+    <a href="https://tw.stock.yahoo.com/quote/2330.TW/revenue" target="_blank">Yahoo 股市 2330 營收</a>
+    （頁面資料日期 2026/08/14，單位仟元，本報告換算為億元）。<br>
+    ② 2026/07 營收 4,675.81 億元、月增 5.6%、年增 44.69%、前 7 月累計 2 兆 8,720.64 億／年增 37.0%（官方公告數字）：
+    <a href="https://money.udn.com/money/story/5710/9681873" target="_blank">經濟日報</a>、
+    <a href="https://www.chinatimes.com/realtimenews/20260810002373-260410" target="_blank">時報資訊</a>、
+    <a href="https://news.cnyes.com/news/id/6568349" target="_blank">鉅亨網營收速報</a>。<br>
+    ③ 26Q1 營收 1.13 兆／年增 35.1%、26Q2 營收 1.27 兆／年增 36%／季增 12%、25Q4 營收 1.05 兆／年增 20.5%、
+    2025 全年營收 3 兆 8,090.5 億、26Q3 財測 446–458 億美元、匯率假設 32 元：法說會報導，
+    出處同第 3 步（<a href="https://www.ctee.com.tw/news/20260416701075-430501" target="_blank">工商時報 26Q1</a>、
+    <a href="https://news.cnyes.com/news/id/6537162" target="_blank">鉅亨網 26Q2</a>、
+    <a href="https://www.ctee.com.tw/news/20260115701075-430501" target="_blank">工商時報 25Q4</a>）。<br>
+    <br>
+    <b>推算數字標示</b>：2025Q1–Q3 季營收、2025 年 4/5/6 月營收（用於說明 2026/06 的低基期效應）、
+    26Q3 財測的新台幣換算值，皆為<b>由公開數字計算而得</b>，計算方式已於上方說明。<br>
+    <b>交叉驗證紀錄</b>：Yahoo 月營收表逐月加總後，26Q1＝11,341 億、26Q2＝12,704 億、25Q4＝10,461 億，
+    與法說會公布的 1.13 兆／1.27 兆／1.05 兆完全吻合；1–7 月加總 2 兆 8,720.64 億，與媒體引用的官方公告數字完全吻合。<br>
+    <b>作圖自我檢查</b>：月營收圖最大值 4,675.81 / 最小值 3,176.57 ＝ 1.472 倍，長條高度比 1.472；
+    年增率圖 67.87 / 16.94 ＝ 4.006 倍，長條高度比 4.006。比例吻合，座標方向正確。
+  </div>
+</section>
 <section id="step5"><div class="pend">【第 5 步／共 6 步：前瞻本益比／EPS 預估】尚未執行</div></section>
 <section id="step6"><div class="pend">【第 6 步／共 6 步：投資決策推理】僅在使用者主動詢問時執行</div></section>
 
 <footer>
-  2330 台積電｜台股個股初步分析　報告版本 v1.2　生成時間 2026-08-15<br>
+  2330 台積電｜台股個股初步分析　報告版本 v1.3　生成時間 2026-08-15<br>
   本報告為分析方法論的個人研究紀錄，<b>不是投資建議</b>。所有數字請以公司official財報與公開資訊觀測站為準。
 </footer>
 
