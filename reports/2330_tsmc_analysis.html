@@ -104,7 +104,7 @@ footer{text-align:center;font-size:12px;color:var(--text-dim);padding:26px 10px 
   <div class="tag">TW STOCK · INITIAL ANALYSIS</div>
   <h1>2330 台積電</h1>
   <div class="sub">台股個股初步分析｜現金流優先、基本面在後</div>
-  <div class="sub">報告版本 v1.3（第 1–4 步完成）　生成時間：2026-08-15</div>
+  <div class="sub">報告版本 v1.4（第 1–5 步完成）　生成時間：2026-08-15</div>
   <img class="badge" src="https://visitor-badge.laobi.icu/badge?page_id=mjib007.stock-analysis.2330" alt="Visitors">
 </header>
 
@@ -113,7 +113,7 @@ footer{text-align:center;font-size:12px;color:var(--text-dim);padding:26px 10px 
   <span class="pad" data-target="step2">2 · 基本資訊</span>
   <span class="pad" data-target="step3">3 · 法說會</span>
   <span class="pad" data-target="step4">4 · 營收趨勢</span>
-  <span class="pad locked" data-target="step5">5 · 前瞻本益比</span>
+  <span class="pad" data-target="step5">5 · 前瞻本益比</span>
   <span class="pad locked" data-target="step6">6 · 投資決策</span>
 </nav>
 
@@ -1212,11 +1212,199 @@ footer{text-align:center;font-size:12px;color:var(--text-dim);padding:26px 10px 
     年增率圖 67.87 / 16.94 ＝ 4.006 倍，長條高度比 4.006。比例吻合，座標方向正確。
   </div>
 </section>
-<section id="step5"><div class="pend">【第 5 步／共 6 步：前瞻本益比／EPS 預估】尚未執行</div></section>
+<section id="step5">
+  <h2>前瞻本益比／EPS 預估</h2>
+  <div class="steptag">【第 5 步／共 6 步】現金流體質＋基本面確認後的最後一塊：估值</div>
+
+  <div class="key">
+    <b>結論先講：用近四季實際 EPS 算，本益比是 27.76 倍；用 2026 年法人預估算，掉到 22.23 倍；用 2027 年預估算，只剩 17.45 倍。</b><br>
+    但這一步<b>真正該注意的不是這三個數字，而是它們背後的預估有多不穩</b>：
+    FactSet 對台積電 2026 年 EPS 的共識，短短一段期間內從 <b>93.01 元 → 99.84 元 → 107.74 元</b>，
+    對應的目標價中位數從 <b>2,387.5 元 → 2,700 元 → 3,160 元</b>。
+    <b>目標價是跟著股價與獲利上修走的，不是股價跟著目標價走。</b>
+  </div>
+
+  <h3>EPS：實際與法人預估</h3>
+  <div class="capt">單位：元。實心＝已公布實際值（米色為期間高峰、粉色為谷底），
+    <b>虛線框＝法人預估值，不是事實</b>。資料為 FactSet 2026/07/19 調查中位數。</div>
+  <svg viewBox="0 0 880 390" xmlns="http://www.w3.org/2000/svg" class="chart">
+<line x1="78" y1="344.0" x2="858" y2="344.0" stroke="var(--text-dim)" stroke-width="1.4"  />
+<text x="69" y="348.0" text-anchor="end" class="axlab">0</text>
+<line x1="78" y1="282.0" x2="858" y2="282.0" stroke="var(--line)" stroke-width="1" stroke-dasharray="3 4" />
+<text x="69" y="286.0" text-anchor="end" class="axlab">50</text>
+<line x1="78" y1="220.0" x2="858" y2="220.0" stroke="var(--line)" stroke-width="1" stroke-dasharray="3 4" />
+<text x="69" y="224.0" text-anchor="end" class="axlab">100</text>
+<line x1="78" y1="158.0" x2="858" y2="158.0" stroke="var(--line)" stroke-width="1" stroke-dasharray="3 4" />
+<text x="69" y="162.0" text-anchor="end" class="axlab">150</text>
+<line x1="78" y1="96.0" x2="858" y2="96.0" stroke="var(--line)" stroke-width="1" stroke-dasharray="3 4" />
+<text x="69" y="100.0" text-anchor="end" class="axlab">200</text>
+<line x1="78" y1="34.0" x2="858" y2="34.0" stroke="var(--line)" stroke-width="1" stroke-dasharray="3 4" />
+<text x="69" y="38.0" text-anchor="end" class="axlab">250</text>
+<rect x="107.7" y="303.9" width="52.0" height="40.1" rx="2" fill="var(--c-trough)" />
+<text x="133.7" y="296.9" text-anchor="middle" class="vlab">32.34</text>
+<text x="133.7" y="364.0" text-anchor="middle" class="xlab">2023</text>
+<rect x="219.1" y="287.9" width="52.0" height="56.1" rx="2" fill="var(--accent)" />
+<text x="245.1" y="280.9" text-anchor="middle" class="vlab">45.25</text>
+<text x="245.1" y="364.0" text-anchor="middle" class="xlab">2024</text>
+<rect x="330.6" y="261.9" width="52.0" height="82.1" rx="2" fill="var(--c-peak)" />
+<text x="356.6" y="254.9" text-anchor="middle" class="vlab">66.25</text>
+<text x="356.6" y="364.0" text-anchor="middle" class="xlab">2025</text>
+<rect x="442.0" y="210.4" width="52.0" height="133.6" rx="2" fill="var(--text-dim)" fill-opacity="0.18" stroke="var(--text-dim)" stroke-width="1.3" stroke-dasharray="5 3" />
+<text x="468.0" y="203.4" text-anchor="middle" class="vlab q">107.74</text>
+<text x="468.0" y="364.0" text-anchor="middle" class="xlab q">2026E</text>
+<rect x="553.4" y="173.9" width="52.0" height="170.1" rx="2" fill="var(--text-dim)" fill-opacity="0.18" stroke="var(--text-dim)" stroke-width="1.3" stroke-dasharray="5 3" />
+<text x="579.4" y="166.9" text-anchor="middle" class="vlab q">137.21</text>
+<text x="579.4" y="364.0" text-anchor="middle" class="xlab q">2027E</text>
+<rect x="664.9" y="130.7" width="52.0" height="213.3" rx="2" fill="var(--text-dim)" fill-opacity="0.18" stroke="var(--text-dim)" stroke-width="1.3" stroke-dasharray="5 3" />
+<text x="690.9" y="123.7" text-anchor="middle" class="vlab q">172.01</text>
+<text x="690.9" y="364.0" text-anchor="middle" class="xlab q">2028E</text>
+<rect x="776.3" y="69.3" width="52.0" height="274.7" rx="2" fill="var(--text-dim)" fill-opacity="0.18" stroke="var(--text-dim)" stroke-width="1.3" stroke-dasharray="5 3" />
+<text x="802.3" y="62.3" text-anchor="middle" class="vlab q">221.50</text>
+<text x="802.3" y="364.0" text-anchor="middle" class="xlab q">2029E</text>
+</svg>
+
+  <h3>前瞻本益比：現在這個價格貴不貴</h3>
+  <p class="tnote">計算方式：<b>現在股價 2,395 元 ÷ 各期 EPS</b>。這是「已知股價、求隱含倍數」，
+    回答的是「<b>以目前價格買進，等於用幾倍的獲利在買</b>」。</p>
+  <div class="wide">
+  <table>
+    <thead><tr><th>基準期間</th><th>EPS（元）</th><th>對應本益比</th><th>說明</th></tr></thead>
+    <tbody><tr><td class='yr'>近四季（實際）</td><td>86.27</td><td><b>27.76 倍</b></td><td><span class='fn'>TTM 25Q3–26Q2</span></td></tr>
+<tr><td class='yr'>2026E</td><td>107.74</td><td><b>22.23 倍</b></td><td><span class='fn'>FactSet 42 位分析師中位數</span></td></tr>
+<tr><td class='yr'>2027E</td><td>137.21</td><td><b>17.45 倍</b></td><td><span class='fn'>FactSet 中位數</span></td></tr>
+<tr class='qrow'><td class='yr'>2028E</td><td>172.01</td><td><b>13.92 倍</b></td><td><span class='fn'>FactSet 中位數</span></td></tr>
+<tr class='qrow'><td class='yr'>2029E</td><td>221.50</td><td><b>10.81 倍</b></td><td><span class='fn'>FactSet 中位數，<b>遠期預估參考價值低</b></span></td></tr></tbody>
+  </table>
+  </div>
+  <p class="tnote">法人對 2026 年的預估本身就有分歧，把區間攤開看：</p>
+  <div class="wide">
+  <table>
+    <thead><tr><th>2026E EPS 情境</th><th>EPS（元）</th><th>前瞻本益比</th></tr></thead>
+    <tbody><tr><td class='yr'>最低估 92.70</td><td>92.70</td><td><b>25.84 倍</b></td></tr>
+<tr><td class='yr'>中位數 107.74</td><td>107.74</td><td><b>22.23 倍</b></td></tr>
+<tr><td class='yr'>最高估 112.20</td><td>112.20</td><td><b>21.35 倍</b></td></tr></tbody>
+  </table>
+  </div>
+  <p class="tnote">也就是說，<b>光是 2026 年這一年的預估分歧，就讓前瞻本益比在 21.35～25.83 倍之間擺盪</b>。
+    <span class="negv">本報告不宣稱這個倍數「高於」或「低於」歷史平均</span>——我沒有查證到一個可靠、穩定的
+    台積電歷史平均本益比可供比較，不做沒有依據的比較性判斷。
+    可提供的唯二事實參照是：<b>近四季實際本益比為 27.76 倍</b>，以及 Yahoo 個股頁同時顯示<b>「同業平均 46.91 倍」</b>。</p>
+
+  <h3>目標本益比法：合理價可能落在哪</h3>
+  <div class="key warn">
+    <b>這和上面的前瞻本益比不是同一件事，別混用。</b><br>
+    前瞻本益比是「<b>已知股價 → 求隱含倍數</b>」；目標本益比法是「<b>先假設一個倍數 → 反推目標價</b>」。
+    前者是描述現況，後者是<b>敏感度試算，不是預測</b>——算出來的價格對「倍數怎麼選」極度敏感，而倍數怎麼選<b>沒有標準答案</b>。
+    下表的 20／25／30 倍是我為了呈現敏感度而<b>任意選的三組情境</b>，不代表我認為哪一個才對。
+  </div>
+  <div class="wide">
+  <table>
+    <thead><tr><th>採用的 EPS</th><th>× 20 倍</th><th>× 25 倍</th><th>× 30 倍</th></tr></thead>
+    <tbody><tr><td class='yr'>2026E EPS 107.74 元</td><td>2,155 元</td><td>2,694 元</td><td>3,232 元</td></tr>
+<tr><td class='yr'>2027E EPS 137.21 元</td><td>2,744 元</td><td>3,430 元</td><td>4,116 元</td></tr></tbody>
+  </table>
+  </div>
+  <p class="tnote">同樣一套算法，<b>光是把倍數從 20 換到 30，2027 年的目標價就從 2,744 元跳到 4,116 元，差距 50%</b>。
+    這正是為什麼目標本益比法只能當敏感度參考、不能當買賣依據。
+    對照市場實際狀況：FactSet 目標價中位數 <b>3,160 元</b>、花旗 2,800 元、高盛 2,750 元、本土法人 2,885 元。</p>
+
+  <h3>我自己算一次：2026 全年 EPS 的由下而上驗算</h3>
+  <p class="tnote">不完全依賴法人數字，用<b>已公布的實際值＋官方財測</b>自行推一次，檢查共識合不合理。
+    已知 <b>2026 上半年實際 EPS ＝ 22.08 ＋ 27.25 ＝ 49.33 元</b>；26Q3 有官方財測；26Q4 沒有財測，必須靠假設。
+    淨利／營業利益的轉換率取自實際值（26Q1 為 86.9%、26Q2 為 92.2%）。</p>
+  <div class="wide">
+  <table>
+    <thead><tr><th>情境</th><th>26Q3 營收假設</th><th>26Q3 營益率</th><th>26Q3 EPS</th>
+      <th>26Q4 假設 → EPS</th><th>2026 全年 EPS</th></tr></thead>
+    <tbody><tr><td class='yr'>保守</td><td>446 億美元（財測下緣）</td><td>56%</td><td>26.78</td><td>與 Q3 持平 26.78</td><td><b>102.9</b></td></tr>
+<tr><td class='yr'>中性</td><td>452 億美元（中位數）</td><td>57%</td><td>28.49</td><td>季增 5%、營益率 57% → 29.92</td><td><b>107.7</b></td></tr>
+<tr><td class='yr'>樂觀</td><td>458 億美元（財測上緣）</td><td>58%</td><td>30.23</td><td>季增 8%、營益率 58% → 32.64</td><td><b>112.2</b></td></tr></tbody>
+  </table>
+  </div>
+  <p class="tnote"><b>算出來是 102.9～112.2 元，中性情境 107.7 元。</b>
+    對照 FactSet 的中位數 107.74 元、最高估 112.2 元、最低估 92.7 元——
+    <b>我的中性值與共識中位數幾乎重合，樂觀值與共識最高估重合</b>。
+    這代表<b>目前的市場共識，在官方財測的基礎上算是站得住腳的，不是憑空樂觀</b>。
+    但要留意：這個驗算<b>有兩個關鍵假設是我加上去的</b>——匯率固定在 32 元、26Q4 營收季增 0～8%。
+    這兩項只要偏離，結果就會跟著變。<b>全部為推算數字。</b></p>
+
+  <div class="key bad">
+    <b>誠實揭露：這些預估有多不確定</b>
+    <ul style="margin:8px 0 0;">
+      <li><b>共識一路在追著上修，而且幅度不小。</b>FactSet 2026 年 EPS 中位數的移動軌跡：</li>
+    </ul>
+    <div class="wide" style="margin-top:8px;">
+    <table>
+      <thead><tr><th>調查日期</th><th>2026E EPS 中位數</th><th>目標價中位數</th><th>分析師人數</th></tr></thead>
+      <tbody><tr><td class='yr'>較早一期</td><td>93.01</td><td>2,387.5</td><td><span class='fn'>—</span></td></tr>
+<tr><td class='yr'>2026/06/29</td><td>99.84</td><td>2,700</td><td><span class='fn'>41 位</span></td></tr>
+<tr><td class='yr'>2026/07/19</td><td><b>107.74</b></td><td><b>3,160</b></td><td><span class='fn'>42 位</span></td></tr></tbody>
+    </table>
+    </div>
+    <ul style="margin:10px 0 0;">
+      <li><b>一個具體到近乎諷刺的例子</b>：花旗在 2026/03/30 提出 2027 年 EPS <b>130.72 元</b>，
+        並自稱「<b>比彭博法人共識高出 18%</b>」——換算當時共識約 110.8 元。
+        結果不到四個月，<b>2026/07/19 的 FactSet 共識已經來到 137.21 元，反而超過花旗當初那個「激進」的數字 5%</b>。
+        <b>共識追著現實跑，而不是預測現實。</b></li>
+      <li><b>方向要看清楚：這一輪偏離是「低估後上修」，不是「高估後落空」。</b>
+        但同一套機制是雙向的——如果 AI 需求出現轉折，
+        <span class="negv">現在這個一路上修的共識，同樣可能以一樣的速度反向下修</span>。
+        別把「共識最近一直對」誤讀成「共識很準」。</li>
+      <li><b>2029 年 EPS 221.5 元這種遠期數字，參考價值很低。</b>
+        它隱含 2026–2029 年複合成長率約 27%，等於假設 AI 需求連續四年不中斷。
+        法說會上魏哲家說需求「可能一路強勁至 2029、2030 年」，但這是定性說法，
+        <b>公司自己也沒有給 2027 年之後的任何數字指引</b>（見第 3 步）。</li>
+      <li><b>法人之間分歧不小</b>：2026E 從 92.7 到 112.2 元（差 21%）；
+        2027E 花旗 130.72、元大 128.46、本土法人 125.59、FactSet 共識 137.21（差 9%）；
+        目標價從 2,750 到 3,160 元。<b>沒有一個「正確答案」可以照抄。</b></li>
+    </ul>
+  </div>
+
+  <div class="key">
+    <b>把第 1 步的現金流結論接回估值</b><br>
+    這一步的所有倍數，分母都是<b>會計上的 EPS</b>。而第 1 步已經驗證過：
+    <b>11 個年度 A（營業現金流）全部大於 D（稅前淨利），26Q2 單季營運現金流仍達淨利的 110.9%</b>。
+    也就是說，<b>這些 EPS 背後是真的收得到現金的</b>，用本益比評價這家公司比評價一家「膨風灌水型」公司來得踏實。
+    <span class="negv">但第 1 步留下的追蹤點仍然有效</span>：A/D 倍率已收斂到 1.11 倍（全期最低）。
+    倍率若跌破 1.0，代表 EPS 成長開始跑在現金之前，<b>那時候這些前瞻本益比就要打折看</b>。
+  </div>
+
+  <div class="snap">
+    <b>資料來源</b>（查詢時間：2026-08-15）<br>
+    ① FactSet 最新調查（<b>2026/07/19</b>，42 位分析師）：2026E EPS 中位數 107.74 元（前值 100.9 元）、
+    最高 112.2 元、最低 92.7 元、目標價 3,160 元；2027E 137.21 元、2028E 172.01 元、2029E 221.5 元；
+    2027E 營收 7.19 兆元、2028E 9.06 兆元、2029E 11.73 兆元：
+    <a href="https://news.cnyes.com/news/id/6539415" target="_blank">鉅亨網速報</a>。<br>
+    ② FactSet 前一期（2026/06/29，41 位分析師）：2026E EPS 99.84 元、目標價 2,700 元：
+    <a href="https://today.line.me/tw/v3/article/GgrroQY" target="_blank">鉅亨網速報（LINE TODAY 轉載）</a>。
+    再前一期 2026E EPS 93.01 元、目標價 2,387.5 元：
+    <a href="https://news.cnyes.com/news/print/6422450" target="_blank">鉅亨網速報</a>。<br>
+    <span class="negv"><b>⚠️ 日期取得的問題</b></span>：上述②的兩篇轉載頁面，自動擷取回傳的發布日期為
+    「2024 年」，但內容序列（93.01 → 99.84 → 107.74、目標價 2,387.5 → 2,700 → 3,160）
+    與已確認為 <b>2026/07/19</b> 的最新一期完全連貫，研判為擷取時的年份判讀錯誤，<b>實際應為 2026 年</b>。
+    此處僅用於呈現「共識持續上修」的軌跡，不影響任何倍數計算。<br>
+    ③ 花旗 2027E EPS 130.72 元、2028E 165.99 元、目標價由 2,600 上調 7.6% 至 2,800 元、
+    自稱較彭博共識高 18%／28%（報導日期 <b>2026/03/30</b>）：
+    <a href="https://money.udn.com/money/story/5607/9412563" target="_blank">經濟日報</a>。<br>
+    ④ 本土法人 2026E EPS 97.68 元、2027E 125.59 元、目標價 2,885 元，及魏哲家「下面幾年都很好」談話
+    （報導日期 <b>2026/06/06</b>）：<a href="https://www.ftnn.com.tw/news/551373" target="_blank">FTNN 新聞網</a>。<br>
+    ⑤ 元大投顧 2026E 99.7 元／2027E 128.46 元、高盛目標價 2,750 元：搜尋結果摘要，
+    <b>未能定位到單一可直接驗證的頁面，屬低查證等級</b>，僅用於呈現法人分歧範圍。<br>
+    ⑥ 股價 2,395 元、近四季 EPS 86.27 元、同業平均本益比 46.91 倍：出處同第 2 步
+    （<a href="https://tw.stock.yahoo.com/quote/2330.TW" target="_blank">Yahoo 股市</a>，2026/08/14 收盤）。<br>
+    ⑦ 26Q3 官方財測（營收 446–458 億美元、營益率 56–58%、匯率假設 32 元）：出處同第 3 步
+    （<a href="https://news.cnyes.com/news/id/6537162" target="_blank">鉅亨網</a>、
+    <a href="https://vocus.cc/article/6a5873d4fd897800016d2a91" target="_blank">法說會整理</a>）。<br>
+    <br>
+    <b>推算數字標示</b>：所有前瞻本益比（2,395 ÷ 各期 EPS）、所有目標本益比法算出的價格、
+    以及「2026 全年 EPS 由下而上驗算」整張表，<b>皆為本報告自行計算，非查得的公告值</b>。
+    驗算所用的假設（匯率 32 元、26Q4 營收季增 0～8%、淨利／營業利益轉換率 86.9～92.2%）已於表格上方載明。
+  </div>
+</section>
 <section id="step6"><div class="pend">【第 6 步／共 6 步：投資決策推理】僅在使用者主動詢問時執行</div></section>
 
 <footer>
-  2330 台積電｜台股個股初步分析　報告版本 v1.3　生成時間 2026-08-15<br>
+  2330 台積電｜台股個股初步分析　報告版本 v1.4　生成時間 2026-08-15<br>
   本報告為分析方法論的個人研究紀錄，<b>不是投資建議</b>。所有數字請以公司official財報與公開資訊觀測站為準。
 </footer>
 
